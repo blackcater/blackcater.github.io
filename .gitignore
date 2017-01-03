@@ -1,0 +1,17 @@
+# editor
+.vscode
+.eclipse
+.hbuilder
+.sublime
+.eclipse
+.atom
+.brackets
+
+# npm / bower / spm
+node_modules
+bower_components
+spm_modules
+
+# hexo
+.deploy_git
+public
