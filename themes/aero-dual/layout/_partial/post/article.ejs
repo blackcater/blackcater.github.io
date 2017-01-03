@@ -42,6 +42,9 @@
           <i class="fa fa-comment"></i>
           Comment
         </a>
+        <a id="go_to_top" href="#">
+          <i class="fa fa-arrow-up"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -49,13 +52,26 @@
 
 <script>
   $(document).on('scroll', function () {
-    $('#disqus_go_to_comment').stop()
-
     var scrollTop = $(document).scrollTop()
 
-    $('#disqus_go_to_comment').animate({
-      top: scrollTop + 80 + 'px'
-    }, 500)
+    if (scrollTop >= 300) {
+      $('#go_to_top').css('display', 'block')
+    }
+
+    if (scrollTop < 300) {
+      $('#go_to_top').css('display', 'none')
+    }
+  })
+
+  var cLeft = $('.post-content').eq(0).offset().left + ($('.post-content').eq(0)).width() + 15 + 'px'
+
+  $('#disqus_go_to_comment').css('left', cLeft)
+  $('#go_to_top').css('left', cLeft)
+
+  $(window).on('resize', function() {
+    var cLeft = $('.post-content').eq(0).offset().left + ($('.post-content').eq(0)).width() + 15 + 'px'
+    $('#disqus_go_to_comment').css('left', cLeft)
+    $('#go_to_top').css('left', cLeft)
   })
 
   $('#disqus_go_to_comment').on('mouseenter', function () {

@@ -2,9 +2,19 @@
 #disqus_thread
   margin-bottom remify(40px)
 #disqus_go_to_comment
-  position absolute
-  right remify(-100px)
-  top remify(80px)
+  position fixed
+  left: remify(-100px)
+  top remify(300px)
+  &:hover
+    background-color $theme-background
+    color $theme-color
+  i
+    font-size 20px
+#go_to_top
+  display none
+  position fixed
+  left remify(-100px)
+  bottom remify(150px)
   &:hover
     background-color $theme-background
     color $theme-color
@@ -21,6 +31,9 @@
 @media only screen and (max-width: 820px)
   #disqus_go_to_comment
     display none
+  #go_to_top
+    display none
+    font-size 0
 
 
 /* normal style */
