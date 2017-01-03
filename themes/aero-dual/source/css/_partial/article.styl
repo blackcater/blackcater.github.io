@@ -1,3 +1,28 @@
+/* Disqus */
+#disqus_thread
+  margin-bottom remify(40px)
+#disqus_go_to_comment
+  position absolute
+  right remify(-100px)
+  top remify(80px)
+  &:hover
+    background-color $theme-background
+    color $theme-color
+  i
+    font-size 20px
+
+@media only screen and (max-width: 980px)
+  #disqus_go_to_comment
+    font-size 0
+    right remify(-20px)
+    i
+      font-size 20px
+
+@media only screen and (max-width: 820px)
+  #disqus_go_to_comment
+    display none
+
+
 /* normal style */
 .post-tags,
 .post-info,

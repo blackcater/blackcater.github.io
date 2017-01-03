@@ -36,7 +36,57 @@
         <div class="post-content">
           <%- post.content %>
         </div>
+        <!-- Disqus -->
+        <div id="disqus_thread"></div>
+        <a id="disqus_go_to_comment" href="#disqus_thread">
+          <i class="fa fa-comment"></i>
+          Comment
+        </a>
       </div>
     </div>
   </div>
 </article>
+
+<script>
+  $(document).on('scroll', function () {
+    $('#disqus_go_to_comment').stop()
+
+    var scrollTop = $(document).scrollTop()
+
+    $('#disqus_go_to_comment').animate({
+      top: scrollTop + 80 + 'px'
+    }, 500)
+  })
+
+  $('#disqus_go_to_comment').on('mouseenter', function () {
+    console.log('mouse enter')
+    $('#disqus_go_to_comment').addClass('animated infinite pulse')
+  })
+
+  $('#disqus_go_to_comment').on('mouseleave', function () {
+    console.log('mouse leave')
+    $('#disqus_go_to_comment').removeClass('animated infinite pulse')
+  })
+</script>
+
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+  this.page.url = "<%= post.permalink %>";  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = "<%= post.permalink %>"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '//blackcaters-blog.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>
+  Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
