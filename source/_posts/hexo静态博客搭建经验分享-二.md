@@ -1,6 +1,6 @@
 ---
-title: hexo静态博客搭建经验分享(一)
-date: 2017-01-03 16:40:54
+title: hexo静态博客搭建经验分享(二)
+date: 2017-01-03 20:37:11
 tags:
   - hexo
   - node.js
