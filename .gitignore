@@ -15,3 +15,4 @@ spm_modules
 # hexo
 .deploy_git
 public
+db.json
