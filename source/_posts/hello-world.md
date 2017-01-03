@@ -1,5 +1,6 @@
 ---
 title: Hello World
+cover: /img/banner-5.png
 ---
 
 <!-- toc -->

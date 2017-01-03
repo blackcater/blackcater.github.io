@@ -4,4 +4,5 @@ date: {{ date }}
 tags:
 categories:
 excerpt:
+cover:
 ---
