@@ -6,6 +6,9 @@ menu:
   Archives:
     url: /archives
     icon: archive
+  Tags:
+    url: /all-tags
+    icon: tags
   Github:
     url: https://github.com/blackcater
     icon: github-alt

@@ -67,6 +67,11 @@ pagination_dir: page
 theme: aero-dual
 theme_style: dark
 
+# rss
+rss:
+  url: http://www.blackcater.win/atom.xml
+  icon: rss-square
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
@@ -83,3 +88,16 @@ toc:
     position: before
     symbol: '#'
     style: header-anchor
+
+# hexo-generate-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: 50
+  hub:
+  content:
+
+# static blog search
+tapir:
+  token: 586c967c14ad665f2e5bd409
+  secret: d67ff124017824489a98844e1c1a08261a3fdba3
