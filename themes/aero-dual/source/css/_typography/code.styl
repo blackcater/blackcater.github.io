@@ -18,11 +18,16 @@
     pre
       border 0
 code
-  color $theme-color
-  padding 0 remify(2px)
+  background-color $color-gary
+  color $color-white
+  padding remify(5px)
   margin 0 remify(2px)
-  border-radius remify(1px)
-  background-color $theme-code-background
+  border-radius remify(4px)
+
+/* selection */
+::selection
+  color $color-white
+  background $theme-color
 
 /* mobile style */
 @media only screen and (max-width: 414px)

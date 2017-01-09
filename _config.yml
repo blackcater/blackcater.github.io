@@ -81,7 +81,6 @@ deploy:
 
 # hexo-toc
 toc:
-  maxdepth: 3
   class: toc
   slugify: transliteration
   anchor:
