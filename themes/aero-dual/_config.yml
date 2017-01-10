@@ -52,3 +52,6 @@ favicon: /favicon.ico
 
 # Google Analytics Tracking ID
 google_analytics:
+
+# zoom.js
+zoom: true

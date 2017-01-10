@@ -28,10 +28,13 @@
   <%- css('css/bootstrap.min.css') %>
   <!-- Font Awesome CSS -->
   <%- css('css/font-awesome.min.css') %>
+  <%- css('css/zoom.css')%>
   <!-- Custom CSS -->
   <% var targetStyle = 'css/style.' + (config.theme_style || 'light') + '.css' %>
   <%- css(targetStyle) %>
 
   <!-- Google Analytics -->
   <%- partial('google-analytics') %>
+  <!-- zoom -->
+  <%- partial('zoom') %>
 </head>

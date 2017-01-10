@@ -79,15 +79,6 @@ deploy:
   repo: https://github.com/blackcater/blackcater.github.io.git
   branch: master
 
-# hexo-toc
-toc:
-  class: toc
-  slugify: transliteration
-  anchor:
-    position: before
-    symbol: '#'
-    style: header-anchor
-
 # hexo-generate-feed
 feed:
   type: atom
@@ -100,3 +91,22 @@ feed:
 tapir:
   token: 586c967c14ad665f2e5bd409
   secret: d67ff124017824489a98844e1c1a08261a3fdba3
+
+# markdown-it configuration
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: false
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
+    - markdown-it-mark
+    - markdown-it-github-toc
