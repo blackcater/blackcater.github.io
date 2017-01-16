@@ -164,7 +164,8 @@ u, .typo-u {
 mark {
   background: #fffdd1;
   border-bottom: 1px solid #ffedce;
-  padding: 2px;
+  border-radius: 2px;
+  padding: 2px 4px;
   margin: 0 5px;
 }
 
@@ -297,8 +298,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* 同 ul/ol，在文章中应用 table 基本格式 */
-// .typo table th,
-// .typo table td,
+/*.typo table th,*/
+/*.typo table td,*/
 .typo-table th,
 .typo-table td,
 .typo table caption {
@@ -308,12 +309,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-// .typo table th,
+ /*.typo table th,*/
 .typo-table th {
   background: #fbfbfb;
 }
 
-// .typo table thead th,
+/*.typo table thead th,*/
 .typo-table thead th {
   background: #f1f1f1;
 }
@@ -329,8 +330,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .typo-em, .typo em, legend, caption {
-  color: #000;
+  color: #747474;
   font-weight: inherit;
+  font-style: italic;
+  padding-left: 2em;
 }
 
 /* 着重号，只能在少量（少于100个字符）且全是全角字符的情况下使用 */
@@ -360,6 +363,7 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
+/* toc */
 .typo ul.markdownIt-TOC {
   list-style: none;
 }

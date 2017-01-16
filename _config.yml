@@ -110,3 +110,4 @@ markdown:
     - markdown-it-emoji
     - markdown-it-mark
     - markdown-it-github-toc
+    - markdown-it-task-lists

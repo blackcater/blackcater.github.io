@@ -1726,6 +1726,10 @@ markdown-it-sup, markdown-it-sup@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/markdown-it-sup/download/markdown-it-sup-1.0.0.tgz#cb9c9ff91a5255ac08f3fd3d63286e15df0a1fc3"
 
+markdown-it-task-lists:
+  version "1.4.1"
+  resolved "http://registry.npm.taobao.org/markdown-it-task-lists/download/markdown-it-task-lists-1.4.1.tgz#ca7babc76a678e10837d75a90183f45112b87b05"
+
 markdown-it@^5.0.1:
   version "5.1.0"
   resolved "http://registry.npm.taobao.org/markdown-it/download/markdown-it-5.1.0.tgz#25286b8465bac496f3f1b77eed544643e9bd718d"
