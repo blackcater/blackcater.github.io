@@ -367,3 +367,27 @@ h1, h2, h3, h4, h5, h6 {
 .typo ul.markdownIt-TOC {
   list-style: none;
 }
+
+/* hr */
+.typo hr {
+  margin-top: 52px;
+  margin-bottom: 42px;
+  display: block;
+  border: none;
+  text-align: center;
+  box-sizing: content-box;
+  height: 0;
+  word-break: break-word;
+  word-wrap: break-word;
+  letter-spacing: .6em;
+}
+
+.typo hr::after {
+  content: '...';
+  display: inline-block;
+  margin-left: .6em;
+  color: #747474;
+  font-size: 20px;
+  position: relative;
+  top: -30px;
+}

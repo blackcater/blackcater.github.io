@@ -108,7 +108,7 @@ OOCSS有两个主要的原则：
 
 你的CSS目录可能像这样：
 
-```scss
+```less
 /* Settings */
 @import "settings.colors";
 @import "settings.global";
