@@ -1,18 +1,5 @@
 # editor
-.vscode
-.eclipse
-.hbuilder
-.sublime
-.eclipse
-.atom
-.brackets
+.idea/
 
-# npm / bower / spm
+# npm
 node_modules
-bower_components
-spm_modules
-
-# hexo
-.deploy_git
-public
-db.json
