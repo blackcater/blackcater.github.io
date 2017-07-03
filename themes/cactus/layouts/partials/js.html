@@ -1,0 +1,43 @@
+<script src="{{ .Site.BaseURL }}js/jquery-2.2.4.min.js"></script>
+<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<script src="{{ .Site.BaseURL }}js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ if .Site.Params.enableGitment }}
+<script src="{{ .Site.BaseURL }}js/gitment.js"></script>
+<!-- Gitment公共JS代码 -->
+<script type="text/javascript">
+  const gitment = new Gitment({
+    title: '{{ .Title }}',
+    owner: '{{ .Site.Params.gitmentOwner }}',
+    repo: '{{ .Site.Params.gitmentRepo }}',
+    oauth: {
+      client_id: '{{ .Site.Params.gitmentClientId }}',
+      client_secret: '{{ .Site.Params.gitmentClientSecret }}'
+    }
+  })
+
+  gitment.render('gitment-comment--container')
+</script>
+<!-- Gitment公共JS代码 end -->
+{{ end }}
+
+{{ range .Site.Params.customJS }}
+<script src="{{ $.Site.BaseURL }}{{ . }}"></script>
+{{ end }}
+
+{{ if .Site.Params.enableGoogleAnalytics }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+{{ if .Site.Params.enableBaiduAnalytics }}
+<script>
+var baiduAnalytics = '{{ .Site.Params.baiduAnalytics }}';
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?" + baiduAnalytics;
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+{{ end }}
