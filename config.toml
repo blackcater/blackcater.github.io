@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://www.blackcater.com/"
+baseurl = "http://www.blackcater.win/"
 # HTML Language Code Reference, such as en, zh-cn
 languageCode = "zh-cn"
 title = "blackcater's blog, dedicated to becoming fullstack developer and be curious about all the new technology!"
