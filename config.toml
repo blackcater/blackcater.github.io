@@ -15,6 +15,7 @@ hasCJKLanguage = true
 	# Enter optionally your twitter account
 	twitter = "your_twotter"
 	enableRSS = true
+	enableToc = true
 
 	# Disqus comment
 	disqusShortname = "your_disqus_short_name"
