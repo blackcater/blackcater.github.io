@@ -173,12 +173,13 @@ h2 {
 nav.main-nav {
     padding: 20px 20px 0;
     /*max-width: 600px;*/
-    /*width:100%;*/
+    width:100%;
     background: #fff;
     background: rgba(255, 255, 255, .90);
     margin: 0 auto;
     text-align: right;
-    /*position: fixed;*/
+    position: fixed;
+    top: 0;
     z-index: 100;
 }
 
@@ -208,27 +209,27 @@ nav.main-nav a.cta:hover {
 }
 
 @media (max-width: 700px) {
-  nav.main-nav {
-      padding: 20px 10px 0 0;
-      background: #fff;
-      background: rgba(255, 255, 255, .90);
-      margin: 0 auto;
-      text-align: right;
-      z-index: 100;
-  }
-  nav.main-nav a {
-      top: 8px;
-      right: 6px;
-      padding: 8px 8px;
-      color: #8590a6;
-      font-size: 13px;
-      line-height: 1.35;
-      border-radius: 3px;
-  }
+    nav.main-nav {
+        padding: 20px 10px 0 0;
+        background: #fff;
+        background: rgba(255, 255, 255, .90);
+        margin: 0 auto;
+        text-align: right;
+        z-index: 100;
+    }
+    nav.main-nav a {
+        top: 8px;
+        right: 6px;
+        padding: 8px 8px;
+        color: #8590a6;
+        font-size: 13px;
+        line-height: 1.35;
+        border-radius: 3px;
+    }
 }
 @media (max-width: 324px) {
     nav.main-nav a.cta {
-      display: none;
+        display: none;
     }
 }
 
@@ -288,17 +289,6 @@ ul {
 li {
     list-style-type: circle;
     list-style-position: inside;
-}
-
-
-/* Line Height */
-
-#post-body, p {
-    line-height: 1.7;
-}
-#post-body p > a {
-  word-break: break-word;
-  white-space: pre-wrap;
 }
 
 b, strong {
@@ -878,51 +868,86 @@ a.symbol:hover {
  * Table of content
  */
 #toc {
-  line-height: 1em;
-  font-size: .7em;
-  word-wrap: break-word;
-  padding: 8px;
-  padding-left: 16px;
-  padding-bottom: 14px;
-  margin: 0 0 25px 0;
-  display: block;
-  color: #808080;
-  background: #fff;
-  border: none;
-  box-shadow: inset 0 0 0 1px #E4EBF2;
-  border-radius: 4px;
-  overflow: hidden;
-  font-family: 'Menlo', 'Monaco', Courier, monospace;
-  /*font: normal 13px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    position: fixed;
+    left: -220px;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    z-index: 110;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    color: #fff;
+    background-color: #8590a6;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+#toc--open {
+    position: fixed;
+    left: 40px;
+    bottom: 50px;
+}
+#toc--open i:hover {
+    cursor: pointer;
+}
+#toc .toc--title {
+    font-size: 1.3em;
+    letter-spacing: 1em;
+    text-align: center;
+    margin: 15px 0 30px 0;
+}
+#toc .toc--close {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    -webkit-transform: translate(-50%, 0) rotate(0);
+    -moz-transform: translate(-50%, 0) rotate(0);
+    -ms-transform: translate(-50%, 0) rotate(0);
+    -o-transform: translate(-50%, 0) rotate(0);
+    transform: translate(-50%, 0) rotate(0);
+    transition: all .2s ease-in-out;
+}
+#toc .toc--close:hover {
+    -webkit-transform: translate(-50%, 0) rotate(90deg);
+    -moz-transform: translate(-50%, 0) rotate(90deg);
+    -ms-transform: translate(-50%, 0) rotate(90deg);
+    -o-transform: translate(-50%, 0) rotate(90deg);
+    transform: translate(-50%, 0) rotate(90deg);
+}
+#toc i:hover {
+    cursor: pointer;
 }
 #TableOfContents {
-  margin: 1em 0 0 0;
-  overflow-x: auto;
-  word-wrap: normal;
-  word-break: break-all;
-  white-space: nowrap;
+    padding-left: 1em;
 }
 #TableOfContents ul {
-  list-style-type:none;
-  margin: 0;
-  padding: 0 .5em;
+    list-style-type:none;
+    margin: 0;
+    padding: 0 1em;
 }
 #TableOfContents ul li {
-  list-style-type: none;
-  line-height: 1.7em;
+    list-style-type: none;
+    line-height: 1.7em;
 }
 #TableOfContents > ul {
-  padding: 0;
+    padding: 0;
 }
 #TableOfContents > ul > li > ul {
-  padding: 0;
+    padding: 0;
 }
 #TableOfContents a code{
-  font-family: Menlo, Monaco, Courier;
-  background-color: #fff;
-  font-size: 11px;
-  padding: 2px 3px;
-  font-weight: 100;
+    font-family: Menlo, Monaco, Courier;
+    background-color: #cacaca;
+    font-size: 11px;
+    padding: 2px 3px;
+    font-weight: 100;
+}
+#TableOfContents ul li a {
+    color: #fff;
 }
 
 
@@ -931,7 +956,7 @@ a.symbol:hover {
  */
 
 #wrapper.tags {
-  padding: 0px 40px 20px 40px;
+    padding: 0px 40px 20px 40px;
 }
 .page-tags {
     text-align: center;

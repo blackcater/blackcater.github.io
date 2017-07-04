@@ -23,14 +23,36 @@
                       </span>
                     </h2>
                 </header>
+
                 {{ if .Site.Params.enableToc }}
-                  {{ if .TableOfContents }}
-                    <div id="toc">
-                      {{ .TableOfContents }}
-                    </div>
-                  {{ end }}
+                    {{ if .TableOfContents }}
+                        <div id="toc">
+                            <div class="toc--title">目录</div>
+                            {{ .TableOfContents }}
+                            <span class="toc--close" id="toc--close">
+                                <i class="fa fa-close"></i>
+                            </span>
+                        </div>
+                        <span id="toc--open">
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+                        <script>
+                            var tocCloseBtn = document.getElementById('toc--close');
+                            var tocOpenBtn = document.getElementById('toc--open');
+                            var tocSection = document.getElementById('toc');
+
+                            tocCloseBtn.onclick = function () {
+                              tocSection.style.left = '-220px';
+                            }
+
+                            tocOpenBtn.onclick = function () {
+                              tocSection.style.left = '0';
+                            }
+                        </script>
+                    {{ end }}
                 {{ end }}
-                <section id="post-body">
+
+                <section class="markdown-body" id="post-body">
                     {{ .Content }}
                 </section>
             </article>
