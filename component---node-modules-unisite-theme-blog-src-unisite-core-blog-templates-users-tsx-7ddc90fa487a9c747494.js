@@ -1,0 +1,2 @@
+(self.webpackChunk=self.webpackChunk||[]).push([[831],{515:function(e,t,a){"use strict";a.r(t);var n=a(7294);t.default=function(){return n.createElement("div",{className:"container mx-auto"},n.createElement("h1",{className:"font-serif font-bold text-2xl mt-4 mb-2 md:text-4xl"},"users page2"))}}}]);
+//# sourceMappingURL=component---node-modules-unisite-theme-blog-src-unisite-core-blog-templates-users-tsx-7ddc90fa487a9c747494.js.map
