@@ -1,2 +1,0 @@
-(self.webpackChunk=self.webpackChunk||[]).push([[597],{9421:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return s}});var a=n(7294);function s(){return a.createElement("div",{className:"container mx-auto"},a.createElement("h1",{className:"font-serif font-bold text-2xl mt-4 mb-2 md:text-4xl"},"user post list page"))}}}]);
-//# sourceMappingURL=component---node-modules-unisite-core-blog-src-templates-user-post-list-tsx-87787c3d45b523737960.js.map
