@@ -1,1 +1,5 @@
-{"componentChunkName":"component---node-modules-unisite-theme-blog-src-unisite-core-blog-templates-tag-post-list-tsx","path":"/tag/rust","result":{"data":{"tag":{"tid":"rust","name":"Rust","postCount":0},"posts":{"nodes":[]}},"pageContext":{"tag":"8b73d92e-d87a-55ed-9bb4-976d4261c0dd","posts":[],"current":0,"previous":null,"previousPath":null,"next":null,"nextPath":null,"total":1,"pageSize":10}},"staticQueryHashes":["1691078586","2378686281","3608088337","4280252867"]}
+{
+    "componentChunkName": "component---node-modules-unisite-theme-blog-src-unisite-core-blog-templates-tag-post-list-tsx",
+    "path": "/tag/rust",
+    "result": {"data":{"tag":{"tid":"rust","name":"Rust","postCount":0},"posts":{"nodes":[]}},"pageContext":{"tag":"8b73d92e-d87a-55ed-9bb4-976d4261c0dd","posts":[],"current":0,"previous":null,"previousPath":null,"next":null,"nextPath":null,"total":1,"pageSize":10}},
+    "staticQueryHashes": ["1691078586","2378686281","3608088337","4280252867"]}
